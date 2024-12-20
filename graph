@@ -1,0 +1,49 @@
+graph TD
+    A[calculator-app/] --> B[src/]
+    B --> C[components/]
+    B --> D[services/]
+    B --> E[utils/]
+    B --> F[styles/]
+    B --> G[assets/]
+    
+    C --> C1[core/]
+    C1 --> C1_1[BasicOperations.js]
+    C1 --> C1_2[ScientificFunctions.js]
+    C1 --> C1_3[Display.js]
+    C1 --> C1_4[Keypad.js]
+    
+    C --> C2[advanced/]
+    C2 --> C2_1[EquationSolver.js]
+    C2 --> C2_2[GraphingCalculator.js]
+    C2 --> C2_3[MatrixOperations.js]
+    C2 --> C2_4[ProgrammingMode.js]
+    
+    C --> C3[features/]
+    C3 --> C3_1[UnitConverter.js]
+    C3 --> C3_2[HistoryTracker.js]
+    C3 --> C3_3[ThemeManager.js]
+    C3 --> C3_4[VoiceInterface.js]
+    
+    C --> C4[educational/]
+    C4 --> C4_1[StepByStepSolution.js]
+    C4 --> C4_2[GameMode.js]
+    C4 --> C4_3[TutorialSystem.js]
+    
+    D --> D1[calculationService.js]
+    D --> D2[historyService.js]
+    D --> D3[storageService.js]
+    D --> D4[integrationService.js]
+    
+    E --> E1[mathHelpers.js]
+    E --> E2[formatters.js]
+    E --> E3[validators.js]
+    E --> E4[constants.js]
+    
+    F --> F1[themes/]
+    F1 --> F1_1[light.css]
+    F1 --> F1_2[dark.css]
+    F1 --> F1_3[custom.css]
+    
+    G --> G1[icons/]
+    G --> G2[sounds/]
+    G --> G3[fonts/]
